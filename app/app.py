@@ -1,10 +1,11 @@
-from flask import Flask, jsonify
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return jsonify({"mensaje": "Hola desde tu primera API en Flask"})
+    return '¡Hola desde Flask en Vercel!'
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    app.run()
+
